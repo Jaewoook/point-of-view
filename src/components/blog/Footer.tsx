@@ -14,7 +14,7 @@ export const Footer = () => {
 
   return (
     <footer className="container flex flex-row py-8 px-3 max-sm:px-0 mx-auto space-x-4 max-sm:justify-center text-zinc-800 dark:text-zinc-200">
-      <p>2024 {siteMetadata?.name}</p>
+      <p>{siteMetadata?.year} {siteMetadata?.author}</p>
       <span> | </span>
       <a className="inline-flex items-center" rel="noreferrer" target="_blank" href={siteMetadata?.githubUrl ?? ""}>
         <FaGithub className="mr-1" />

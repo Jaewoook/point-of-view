@@ -17,7 +17,8 @@ const remarkGfm = import("remark-gfm");
 
 const siteMetadata = {
   title: "point of view.",
-  name: "Jaewook Ahn",
+  author: "Jaewook Ahn",
+  year: "2026",
   description: "Jaewook's point of view.",
   siteUrl: "https://jaewook.me",
   githubUrl: "https://github.com/Jaewoook",
