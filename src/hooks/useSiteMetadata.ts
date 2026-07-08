@@ -4,7 +4,8 @@ const query = graphql`
   query GetSiteMetadata {
     site {
       siteMetadata {
-        name
+        author
+        year
         siteUrl
         githubUrl
         portfolioUrl

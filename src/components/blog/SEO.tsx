@@ -43,7 +43,7 @@ export const SEO = (props: React.PropsWithChildren<SEOProps>) => {
       {siteMetadata?.title ? <meta property="og:site_name" content={siteMetadata?.title} /> : null}
       <meta property="og:url" content={pageUrl} />
       <meta name="twitter:url" content={pageUrl} />
-      {siteMetadata?.name ? <meta name="author" content={siteMetadata?.name} /> : null}
+      {siteMetadata?.author ? <meta name="author" content={siteMetadata?.author} /> : null}
       <meta property="og:type" content={type} />
       <meta property="og:locale" content="ko_KR" />
       {pageDescription ? (
@@ -55,7 +55,7 @@ export const SEO = (props: React.PropsWithChildren<SEOProps>) => {
       ) : null}
       {type === "article" ? (
         <>
-          {siteMetadata?.name ? <meta property="og:article:author" content={siteMetadata?.name} /> : null}
+          {siteMetadata?.author ? <meta property="og:article:author" content={siteMetadata?.author} /> : null}
           {publishedTime ? <meta property="og:article:published_time" content={publishedTime} /> : null}
           {section ? <meta property="og:article:section" content={section} /> : null}
           {pageTags.map((tag) => (
